@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Татьяна](https://up.htmlacademy.ru/htmlcss/37/user/2127425).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
