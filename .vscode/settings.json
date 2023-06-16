@@ -1,14 +1,16 @@
 {
   "editor.renderWhitespace": "selection",
   "files.exclude": {
-      "*:Zone.Identifier": true,
-      "node_modules/": true
+    "*:Zone.Identifier": true,
+    "node_modules/": true
   },
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.guides.bracketPairs": "active",
+  "editor.formatOnSave": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "files.autoSave": "afterDelay",
   "css.format.spaceAroundSelectorSeparator": true,
   "css.lint.compatibleVendorPrefixes": "warning",
   "css.lint.duplicateProperties": "warning",
@@ -19,5 +21,7 @@
   "css.lint.unknownVendorSpecificProperties": "warning",
   "css.lint.zeroUnits": "error",
   "html.format.endWithNewline": true,
-  "html.format.indentInnerHtml": true
+  "html.format.indentInnerHtml": true,
+  "cSpell.language": "en,ru",
+  "liveServer.settings.CustomBrowser": "chrome:PrivateMode"
 }
