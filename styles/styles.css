@@ -1548,6 +1548,8 @@ input[type='number'] {
 
 .rating-stars {
   background: url("../images/icons/star.svg") repeat-x 0;
+  position: relative;
+  right: 3px;
   background-size: 23px 17px;
 }
 
@@ -1564,7 +1566,7 @@ input[type='number'] {
 }
 
 .rating-stars-2 {
-  width: 42px;
+  width: 43px;
 }
 
 .rating-stars-1 {
