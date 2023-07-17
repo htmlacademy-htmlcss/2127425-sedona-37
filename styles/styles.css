@@ -122,6 +122,7 @@ body {
   min-height: 64px;
   margin: 0;
   padding: 0;
+  margin-left: 30px;
   align-items: center;
   list-style-type: none;
   box-sizing: border-box;
@@ -176,8 +177,8 @@ body {
   background-color: #7DB54F;
   border-radius: 10px;
   position: relative;
-  left: 9px;
-  bottom: 14px;
+  left: 7.5px;
+  bottom: 16px;
 }
 
 .button-shopping {
@@ -315,7 +316,7 @@ body {
 
 .section-advantages h2 {
   margin-top: 0;
-  margin-bottom: 20;
+  margin-bottom: 25px;
 }
 
 .section-advantages p {
@@ -418,12 +419,11 @@ body {
 
 .section-recommendations h2 {
   margin-top: 0;
-  margin-bottom: 20;
+  margin-bottom: 20px;
 }
 
 .section-recommendations p {
-  margin-top: 0;
-  margin-bottom: 64px;
+  margin: 0;
 }
 
 .recommendations-list {
@@ -490,7 +490,7 @@ body {
 
 .section-hotel-search h2 {
   margin-top: 0;
-  margin-bottom: 20;
+  margin-bottom: 20px;
 }
 
 .section-hotel-search p {
@@ -531,13 +531,26 @@ body {
   background-repeat: no-repeat;
 }
 
+.mailing-title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.section-mailing p {
+  max-width: 475px;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 54px;
+}
+
 .subscription .section-title {
   color: #ffffff;
 }
 
 .mailing-form {
   display: flex;
-  min-width: 684px;
+  justify-content: center;
+  max-width: 684px;
   box-sizing: border-box;
 }
 
@@ -552,10 +565,12 @@ body {
   border: none;
   background-color: #F2F2F2;
   border-radius: 4px 0px 0px 4px;
+  box-sizing: border-box;
 }
 
 .button-mailing-form {
   font-family: inherit;
+  min-width: 232px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -1009,6 +1024,9 @@ body {
 }
 
 .intro-hotel-search {
+  display: block;
+  width: auto;
+  min-height: 307px;
   color: #ffffff;
   background-color: #8daab8;
   background-image: url("../images/background-photo/hotel-search-bg.jpg");
@@ -1092,7 +1110,7 @@ body {
 .catalog-filter-products {
   width: 1060px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0 auto;
 }
 
@@ -1107,19 +1125,18 @@ body {
 }
 
 .catalog-filter-group-housing {
-  margin-right: 71px;
+  margin-right: 140px;
+  margin-left: 70px;
 }
 
 .catalog-filter-list-infrastructure {
   display: block;
-  min-width: 150, 5px;
-  max-width: 210, 5px;
+  min-width: 150.5px;
 }
 
 .catalog-filter-list-housing {
   display: block;
-  min-width: 150, 5px;
-  max-width: 285, 5px;
+  min-width: 150.5px;
 }
 
 .catalog-filter-price {
@@ -1152,6 +1169,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  padding: 0;
 }
 
 .control {
@@ -1250,7 +1268,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   background-color: #636a6f;
   border-radius: 2px;
   margin-top: 12px;
@@ -1290,6 +1308,7 @@ body {
 .catalog-filter-group-button {
   display: block;
   width: 191px;
+  margin-left: 70px;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -1553,10 +1572,13 @@ input[type='number'] {
 
 .product-rating {
   font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   color: #333333;
   background: #F2F2F2;
   padding: 9px 22px 8px 23px;
   border-radius: 4px;
+  text-transform: uppercase;
 }
 
 .pagination::before {
