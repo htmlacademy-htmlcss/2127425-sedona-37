@@ -428,6 +428,8 @@ body {
 
 .recommendations-list {
   display: flex;
+  width: 100%;
+  min-height: 385px;
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -438,22 +440,40 @@ body {
   box-sizing: border-box;
 }
 
-.recommendations-item-housing {
+.recommendations-item-housing::before {
+  display: block;
+  content: "";
+  align-self: center;
+  width: 75px;
+  height: 72px;
+  margin: 0 auto;
+  background: center / contain no-repeat;
   background-image: url("../images/icons/housing.svg");
   background-repeat: no-repeat;
-  background-position: top 81px center;
 }
 
-.recommendations-item-food {
+.recommendations-item-food::before {
+  display: block;
+  content: "";
+  align-self: center;
+  width: 75px;
+  height: 72px;
+  margin: 0 auto;
+  background: center / contain no-repeat;
   background-image: url("../images/icons/food.svg");
   background-repeat: no-repeat;
-  background-position: top 81px center;
 }
 
-.recommendations-item-souvenirs {
+.recommendations-item-souvenirs::before {
+  display: block;
+  content: "";
+  align-self: center;
+  width: 76px;
+  height: 72px;
+  margin: 0 auto;
+  background: center / contain no-repeat;
   background-image: url("../images/icons/souvenirs.svg");
   background-repeat: no-repeat;
-  background-position: top 81px center;
 }
 
 .recommendations-item {
@@ -461,7 +481,7 @@ body {
   flex-direction: column;
   display: space-between;
   justify-content: flex-start;
-  padding: 183px 85px 81px 85px;
+  padding: 81px 85px 81px 85px;
 }
 
 .recommendations-title {
@@ -472,9 +492,11 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
+  margin-top: 30px;
 }
 
 .recommendations-description {
+  margin-top: 30px;
   margin-bottom: 0;
 }
 
@@ -1354,6 +1376,7 @@ input[type='number'] {
 .catalog-products {
   width: 1060px;
   display: flex;
+  height: 49px;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -1375,17 +1398,20 @@ input[type='number'] {
   display: flex;
   flex-wrap: wrap;
   max-width: 292px;
+  max-height: 49px;
   margin-right: 70px;
+  box-sizing: border-box;
 }
 
 .select-control {
+  display: flex;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  padding: 14px 20px;
+  padding: 12px 20px;
   width: 292px;
-  min-height: 49px;
+  max-height: 49px;
   border: 2px solid #E5E5E5;
   background-color: #ffffff;
   border-radius: 4px;
@@ -1394,6 +1420,7 @@ input[type='number'] {
   background-image: url("../images/arrow/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  box-sizing: border-box;
 }
 
 .select-control option {
@@ -1418,9 +1445,11 @@ input[type='number'] {
 }
 
 .button-displaying-products {
+  display: inline-block;
   width: 48px;
   height: 48px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .button-products {
@@ -1476,6 +1505,7 @@ input[type='number'] {
   min-width: 1060px;
   margin: 0 auto;
   gap: 20px;
+  margin-bottom: 40px;
 }
 
 .product-card {
@@ -1584,28 +1614,18 @@ input[type='number'] {
   text-transform: uppercase;
 }
 
-.pagination::before {
-  display: block;
-  position: relative;
-  width: 1060px;
-  height: 1px;
-  background-color: #E6E6E6;
-  position: center;
-  bottom: 40px;
-  content: "";
-}
-
-/*ПАГИНАЦИЯ*/
-
 .pagination {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  margin-top: 80px;
   max-width: 1060px;
   gap: 8px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  box-shadow: inset 0 1px #E6E6E6;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 .pagination-link {
