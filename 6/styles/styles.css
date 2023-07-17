@@ -177,7 +177,7 @@ body {
   background-color: #7DB54F;
   border-radius: 10px;
   position: relative;
-  left: 7.5px;
+  left: 7px;
   bottom: 16px;
 }
 
@@ -311,7 +311,7 @@ body {
 
 .section-advantages {
   text-align: center;
-  padding: 69px 250px;
+  padding: 69px 250px 90px 250px;
 }
 
 .section-advantages h2 {
@@ -1109,6 +1109,7 @@ body {
 
 .catalog-filter-products {
   width: 1060px;
+  min-height: 160px;
   display: flex;
   justify-content: flex-start;
   margin: 0 auto;
@@ -1117,6 +1118,7 @@ body {
 .catalog-filter-group {
   display: flex;
   flex-direction: column;
+  min-height: 160px;
   row-gap: 28px;
   list-style-type: none;
   margin: 0;
@@ -1143,6 +1145,7 @@ body {
   width: 288px;
   display: flex;
   column-gap: 2px;
+  margin-bottom: 15px;
 }
 
 .catalog-filter-list {
@@ -1268,10 +1271,8 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-bottom: 18px;
   background-color: #636a6f;
   border-radius: 2px;
-  margin-top: 12px;
 }
 
 .range-bar {
@@ -1547,6 +1548,8 @@ input[type='number'] {
 
 .rating-stars {
   background: url("../images/icons/star.svg") repeat-x 0;
+  position: relative;
+  right: 3px;
   background-size: 23px 17px;
 }
 
@@ -1563,7 +1566,7 @@ input[type='number'] {
 }
 
 .rating-stars-2 {
-  width: 42px;
+  width: 43px;
 }
 
 .rating-stars-1 {
