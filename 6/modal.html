@@ -220,7 +220,6 @@
 
       <!--МОДАЛЬНОЕ ОКНО-->
 
-      <dialog id="my-dialog">
         <div class="modal-container modal-container-close">
           <div class="modal modal-auth">
             <button class="modal-close-button" id="close-dialog-btn" type="button">
@@ -311,20 +310,6 @@
 
           </div>
         </div>
-      </dialog>
-      <script>
-        const showDialogBtn = document.querySelector('#show-dialog-btn');
-        const myDialog = document.querySelector('#my-dialog');
-        const closeDialogBtn = document.querySelector('#close-dialog-btn');
-
-        showDialogBtn.addEventListener('click', () => {
-          myDialog.showModal();
-        });
-
-        closeDialogBtn.addEventListener('click', () => {
-          myDialog.close();
-        });
-      </script>
     </div>
   </body>
 
