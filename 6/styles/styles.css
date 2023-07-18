@@ -1053,13 +1053,6 @@ body {
 /*КАТАЛОГ ГОСТИНИЦ*/
 /*ФИЛЬТР*/
 
-.section-catalog-products {
-  padding-left: 70px;
-  padding-right: 70px;
-  margin-top: 50px;
-  margin-bottom: 60px;
-}
-
 .intro-hotel-search {
   display: block;
   width: auto;
@@ -1070,7 +1063,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 35px 70px 70px 70px;
-  margin-bottom: 50px;
 }
 
 .intro-hotel-search-title {
@@ -1143,6 +1135,10 @@ body {
 }
 
 /*ФИЛЬТРЫ ВЫБОРА ГОСТИНИЦ*/
+
+.section-catalog-products {
+  padding: 50px 70px 60px 70px;
+ }
 
 .catalog-filter-products {
   width: 1060px;
