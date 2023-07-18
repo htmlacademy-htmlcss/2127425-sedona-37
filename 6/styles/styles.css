@@ -915,11 +915,13 @@ body {
 .modal-change-minus {
   border-radius: 4px 0px 0px 4px;
   color: rgb(117, 97, 87, 0.30);
+  z-index: 0;
 }
 
 .modal-change-plus {
   border-radius: 0px 4px 4px 0px;
   color: rgb(117, 97, 87, 0.30);
+  z-index: 0;
 }
 
 .modal-change-plus:hover,
@@ -953,6 +955,10 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
+}
+
+.modal-participants-quantity:focus {
+  outline-offset: -2px;
 }
 
 .modal-button-participants-quantity {
@@ -1365,12 +1371,14 @@ input[type='number'] {
 }
 
 .button-apply {
+  width: 100%;
   background: #82B3D3;
   padding: 8px 15px;
   margin-top: 56px;
 }
 
 .button-reset {
+  width: 100%;
   background: transparent;
   padding: 8px 15px;
   margin-top: 32px;
@@ -1544,12 +1552,12 @@ input[type='number'] {
   color: #000000;
 }
 
-.product-card-link:hover,
-.product-card-link:active {
+.hotel-card-title:hover,
+.hotel-card-title:active {
   color: #756157;
 }
 
-.product-card-link:focus {
+.hotel-card-title:focus {
   color: #756157;
   opacity: 0.3;
 }
