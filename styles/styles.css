@@ -107,7 +107,7 @@ body {
 .navigation-link-active::after {
   display: block;
   position: relative;
-  top: 19px;
+  top: 18px;
   width: auto;
   height: 2px;
   background-color: #756257;
@@ -177,8 +177,8 @@ body {
   background-color: #7DB54F;
   border-radius: 10px;
   position: relative;
-  left: 7px;
-  bottom: 16px;
+  left: 6px;
+  bottom: 18px;
 }
 
 .button-shopping {
@@ -312,7 +312,7 @@ body {
 
 .section-advantages {
   text-align: center;
-  padding: 69px 250px 90px 250px;
+  padding: 70px 250px 90px 250px;
 }
 
 .section-advantages h2 {
@@ -1285,6 +1285,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  background-color: #f2f2f2;
   padding: 12px 20px;
   border-radius: 4px 0px 0px 4px;
   border: 0;
@@ -1373,22 +1374,21 @@ input[type='number'] {
 
 .button-apply {
   background: #82B3D3;
-  padding: 8px 50px;
+  padding: 8px 15px;
   margin-top: 56px;
 }
 
 .button-reset {
   background: transparent;
-  padding: 8px 57.5px;
+  padding: 8px 15px;
   margin-top: 32px;
 }
 
 /*КАТАЛОГ*/
 
 .catalog-products {
-  width: 1060px;
   display: flex;
-  height: 49px;
+  max-width: 1060px;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -1400,10 +1400,9 @@ input[type='number'] {
 .catalog-products h2 {
   display: flex;
   flex-wrap: wrap;
-  max-width: max-content;
+  max-width: 538px;
   margin: 0;
   text-align: start;
-  margin-right: 200px;
 }
 
 .select-control-products {
@@ -1411,7 +1410,15 @@ input[type='number'] {
   flex-wrap: wrap;
   max-width: 292px;
   max-height: 49px;
-  margin-right: 70px;
+  box-sizing: border-box;
+}
+
+.catalog-products-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 522px;
+  max-height: 49px;
   box-sizing: border-box;
 }
 
@@ -1579,17 +1586,17 @@ input[type='number'] {
 
 .button-more {
   background: #756157;
-  padding: 8px 26px;
+  padding: 8px 15px;
 }
 
 .button-favorites {
   background: #82B3D3;
-  padding: 8px 20px;
+  padding: 8px 15px;
 }
 
 .button-favorites-active {
   background: #7DB54F;
-  padding: 8px 18px;
+  padding: 8px 15px;
 }
 
 .rating-stars {
@@ -1625,7 +1632,8 @@ input[type='number'] {
   line-height: 20px;
   color: #333333;
   background: #F2F2F2;
-  padding: 9px 22px 8px 23px;
+  padding: 9px 15px 8px 15px;
+  text-align: center;
   border-radius: 4px;
   text-transform: uppercase;
 }
