@@ -812,6 +812,8 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-transform: capitalize;
   margin: 0;
 }
@@ -852,7 +854,7 @@ body {
   line-height: 21px;
   margin: 0;
   color: #333333;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   margin-left: 157px;
   margin-right: 20px;
 }
@@ -874,7 +876,7 @@ body {
   border-radius: 4px;
   background: #f2f2f2;
   border: none;
-  padding-left: 10px;
+  padding-left: 20px;
   margin-bottom: 4px;
   background-image: url("../images/modal/calendar.svg");
   background-repeat: no-repeat;
@@ -1054,6 +1056,7 @@ body {
 .section-catalog-products {
   padding-left: 70px;
   padding-right: 70px;
+  margin-top: 50px;
   margin-bottom: 60px;
 }
 
