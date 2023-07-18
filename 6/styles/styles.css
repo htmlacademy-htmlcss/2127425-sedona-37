@@ -1238,8 +1238,8 @@ body {
 .checkbox-input:checked {
   background-image: url("../images/checkbox/checkbox-checked.svg");
   background-repeat: no-repeat;
-  background-position: center top 6px;
-  background-size: 13px 10px;
+  background-position: center top 5px;
+  background-size: 12px 12px;
 }
 
 .radio-input:checked {
