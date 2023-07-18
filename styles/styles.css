@@ -111,7 +111,6 @@ body {
   width: auto;
   height: 2px;
   background-color: #756257;
-  position: bottom center;
   content: "";
 }
 
@@ -130,7 +129,6 @@ body {
 
 .navigation-logo {
   display: block;
-  align-items: center;
   position: relative;
   height: 64px;
 }
@@ -359,7 +357,6 @@ body {
   vertical-align: middle;
   margin-left: auto;
   object-fit: contain;
-  align-items: center;
 }
 
 .advantages-title {
@@ -480,9 +477,6 @@ body {
 
 .recommendations-item {
   width: 230px;
-  flex-direction: column;
-  display: space-between;
-  justify-content: flex-start;
   padding: 81px 85px 81px 85px;
 }
 
@@ -507,6 +501,7 @@ body {
 }
 
 /*ПОИСК ОТЕЛЯ*/
+
 .section-hotel-search {
   padding: 96px 304px;
   text-align: center;
@@ -520,7 +515,6 @@ body {
 .section-hotel-search p {
   margin-top: 0;
   margin-bottom: 54px;
-  text-align: center;
 }
 
 .hotel-search-button {
@@ -1219,7 +1213,6 @@ body {
 
 .control-input {
   display: flex;
-  appearance: none;
   background-color: #ffffff;
   border-radius: 4px;
   appearance: none;
