@@ -73,29 +73,29 @@ body {
 }
 
 .navigation-link-interactive:hover,
-.navigation-link-interactive:active {
+.navigation-link-interactive:focus {
   color: #68A2CA;
 }
 
-.navigation-link-interactive:focus {
+.navigation-link-interactive:active {
   color: rgb(104, 162, 202, 0.60);
 }
 
 .navigation-logo-active:hover,
-.navigation-logo-active:active {
+.navigation-logo-active:focus{
   color: #68a2ca;
 }
 
-.navigation-logo-active:focus {
+.navigation-logo-active:active {
   color: rgb(104, 162, 202, 0.60);
 }
 
 .navigation-user a:hover,
-.navigation-user a:active {
+.navigation-user a:focus {
   color: #68A2CA;
 }
 
-.navigation-user a:focus {
+.navigation-user a:active {
   color: rgb(104, 162, 202, 0.60);
 }
 
@@ -186,63 +186,61 @@ body {
   cursor: pointer;
 }
 
-.button-brown:hover,
-.button-brown:active {
+.button-brown:not(:disabled):hover,
+.button-brown:not(:disabled):focus {
   background: #615048;
 }
 
-.button-brown:focus {
+.button-brown:active {
   background: #756157;
   color: rgba(255, 255, 255, 0.30)
 }
 
-.button-blue:hover,
-.button-blue:active {
+.button-blue:not(:disabled):hover,
+.button-blue:not(:disabled):focus {
   background: #68A2CA;
 }
 
-.button-blue:focus {
+.button-blue:active {
   background: #82B3D3;
   color: rgba(255, 255, 255, 0.30);
 }
 
-.button-modal:hover,
-.button-modal:active {
+.button-modal:not(:disabled):hover,
+.button-modal:not(:disabled):focus {
   background: #68A2CA;
 }
 
-.button-modal:focus {
+.button-modal:active {
   background: #68A2CA;
   color: rgba(255, 255, 255, 0.30);
 }
 
-.button-green:hover,
-.button-green:active {
+.button-green:not(:disabled):hover,
+.button-green:not(:disabled):focus {
   background: #6C9E42;
 }
 
-.button-green:focus {
+.button-green:active {
   background: #7DB54F;
   color: rgba(255, 255, 255, 0.30);
 }
 
-.button-transparent:hover,
-.button-transparent:active {
+.button-transparent:not(:disabled):hover {
   color: rgba(255, 255, 255, 0.50);
 }
 
 .button-transparent:focus {
+  color: #ffffff;
+}
+
+.button-transparent:active {
   color: rgba(255, 255, 255, 0.30);
 }
 
 .button-transparent-disabled:disabled {
   color: rgba(255, 255, 255, 0.10);
   pointer-events: none;
-}
-
-.pagination-next:hover,
-.pagination-next:active {
-  outline: 1px solid #82B3D3;
 }
 
 .button-disabled:disabled {
@@ -568,6 +566,19 @@ body {
   box-sizing: border-box;
 }
 
+.mailing-form-input-disabled:disabled {
+  color: rgba(0, 0, 0, 0.30);
+  pointer-events: none;
+}
+
+.input:not(:disabled):hover {
+  background-color: #E6E6E6;
+}
+
+.input:focus {
+  outline: 2px solid #000000;
+}
+
 .button-mailing-form {
   font-family: inherit;
   min-width: 232px;
@@ -626,11 +637,11 @@ body {
 }
 
 .social-link:hover,
-.social-link:active {
+.social-link:focus {
   color: #68A2CA;
 }
 
-.social-link:focus {
+.social-link:active {
   color: rgb(104, 162, 202, 0.3);
 }
 
@@ -652,12 +663,11 @@ body {
 }
 
 .phone-link:hover,
-.phone-link:active {
+.phone-link:focus {
   color: #756157;
-
 }
 
-.phone-link:focus {
+.phone-link:active {
   color: rgb(117, 97, 87, 0.30);
 }
 
@@ -680,12 +690,11 @@ body {
 }
 
 .htmlacademy-link:hover,
-.htmlacademy-link:active {
+.htmlacademy-link:focus {
   color: #756157;
-
 }
 
-.htmlacademy-link:focus {
+.htmlacademy-link:active {
   color: rgb(117, 97, 87, 0.30);
 }
 
@@ -741,8 +750,8 @@ body {
   margin: auto;
 }
 
-.modal-close-button:hover,
-.modal-close-button:active {
+.modal-close-button:not(:disabled):hover,
+.modal-close-button:not(:disabled):active {
   background-color: #E6E6E6;
 }
 
@@ -859,13 +868,17 @@ body {
   box-sizing: border-box;
 }
 
-.modal-field:hover,
-.modal-field:active {
+.modal-field-disabled:disabled {
+  color: rgba(0, 0, 0, 0.30);
+  pointer-events: none;
+}
+
+.modal-field:not(:disabled):hover {
   color: #000000;
   background-color: #E6E6E6;
 }
 
-.modal-field:focus {
+.modal-field:active {
   outline: 2px solid #000000;
   background-color: #F2F2F2;
 }
@@ -902,13 +915,13 @@ body {
   color: rgb(117, 97, 87, 0.30);
 }
 
-.modal-change-plus:hover,
-.modal-change-plus:active {
+.modal-change-plus:not(:disabled):hover,
+.modal-change-plus:not(:disabled):active {
   color: #000000;
 }
 
-.modal-change-minus:hover,
-.modal-change-minus:active {
+.modal-change-minus:not(:disabled):hover,
+.modal-change-minus:not(:disabled):active {
   color: #000000;
 }
 
@@ -1086,14 +1099,13 @@ body {
   margin-right: 10px;
 }
 
-.breadcrumbs-link-home:hover,
-.breadcrumbs-link-home:active {
+.breadcrumbs-link-home:hover {
   color: rgb(255, 255, 255, 0.60);
 }
 
-.breadcrumbs-link-home:focus {
-  color: rgb(255, 255, 255, 0.30);
-}
+.breadcrumbs-link-home:active {
+    color: rgb(255, 255, 255, 0.30);
+  }
 
 .breadcrumbs-link-home svg {
   display: block;
@@ -1185,31 +1197,54 @@ body {
   align-items: center;
 }
 
-.control:hover {
+.control-input:not(checked):not(:disabled):hover {
   opacity: 0.7;
+}
+
+.control-label:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .control-input {
   display: flex;
-  background-color: #ffffff;
-  border-radius: 4px;
-  appearance: none;
-  width: 20px;
-  height: 20px;
   margin: 0;
   margin-right: 16px;
   cursor: pointer;
 }
 
-.radio-input {
-  border-radius: 50px;
-}
-
 .checkbox-input:checked {
   background-image: url("../images/checkbox/checkbox-checked.svg");
   background-repeat: no-repeat;
-  background-position: center top 5px;
+  background-position: center;
   background-size: 12px 12px;
+  cursor: pointer;
+}
+
+.checkbox-input:not(checked) {
+  background-color: #ffffff;
+  border-radius: 4px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.checkbox-input-disabled:checked:disabled {
+  background-image: url("../images/checkbox/checkbox-checked") no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.checkbox-input-disabled:not(checked):disabled {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #E5E5E5;
+  background-color: #ffffff;
+  opacity: 0.7;
+  pointer-events: none;
 }
 
 .radio-input:checked {
@@ -1217,12 +1252,33 @@ body {
   background-repeat: no-repeat;
   background-position: center top 5px;
   background-size: 10px 10px;
+  cursor: pointer;
 }
 
-.catalog-filter-group-cost {
-  display: grid;
-  grid-template-columns: repeat(2, 143px);
-  box-sizing: border-box;
+.radio-input:not(checked) {
+  background-color: #ffffff;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.radio-input-disabled:checked:disabled {
+  background-image: url("../images/checkbox/radio-checked.svg") no-repeat;
+  background-position: center;
+  background-size: 10px 10px;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.radio-input-disabled:not(checked):disabled {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #E5E5E5;
+  background-color: #ffffff;
+  opacity: 0.7;
+  pointer-events: none;
 }
 
 .price-label {
@@ -1261,12 +1317,9 @@ body {
   border: 0;
 }
 
-.input:hover {
-  background-color: #E6E6E6;
-}
-
-.input:focus {
-  outline: 2px solid #000000;
+.price-input-disabled:disabled {
+  color: rgba(0, 0, 0, 0.30);
+  pointer-events: none;
 }
 
 .price-max-input {
@@ -1467,7 +1520,7 @@ input[type='number'] {
   border-radius: 4px;
 }
 
-.button-displaying-products:hover {
+.button-displaying-products:not(:disabled):hover {
   border: 2px solid #000000;
 }
 
@@ -1516,11 +1569,11 @@ input[type='number'] {
 }
 
 .hotel-card-title:hover,
-.hotel-card-title:active {
+.hotel-card-title:focus {
   color: #756157;
 }
 
-.hotel-card-title:focus {
+.hotel-card-title:active {
   color: #756157;
   opacity: 0.3;
 }
@@ -1641,4 +1694,9 @@ input[type='number'] {
   padding: 11px 21.5px;
   background: #ffffff;
   color: #000000;
+}
+
+.pagination-next:hover,
+.pagination-next:active {
+  outline: 1px solid #82B3D3;
 }
