@@ -98,7 +98,7 @@
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="15" fill="none" viewBox="0 0 13 15">
-                  <path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
+                  <path fill="currentColor" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
                   <path fill="currentColor" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
                 </svg>
                 <span class="visually-hidden">На главную</span>
@@ -121,19 +121,19 @@
                   <ul class="catalog-filter-list catalog-filter-list-infrastructure">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input checkbox-input" type="checkbox" name="pool" checked>
+                        <input class="control-input checkbox-input checkbox-input-disabled" type="checkbox" name="pool" checked>
                         <span class="control-label">Бассейн</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input checkbox-input" type="checkbox" name="parking" checked>
+                        <input class="control-input checkbox-input checkbox-input-disabled" type="checkbox" name="parking" checked>
                         <span class="control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input checkbox-input" type="checkbox" name="wi-fi">
+                        <input class="control-input checkbox-input checkbox-input-disabled" type="checkbox" name="wi-fi">
                         <span class="control-label">Wi-Fi</span>
                       </label>
                     </li>
@@ -145,20 +145,20 @@
                   <ul class="catalog-filter-list catalog-filter-list-housing">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input radio-input" type="radio" name="product-group" value="hotel"
+                        <input class="control-input radio-input radio-input-disabled" type="radio" name="product-group" value="hotel"
                           checked>
                         <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input radio-input" type="radio" name="product-group" value="motel">
+                        <input class="control-input radio-input radio-input-disabled" type="radio" name="product-group" value="motel">
                         <span class="control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input radio-input" type="radio" name="product-group" value="apartments">
+                        <input class="control-input radio-input radio-input-disabled" type="radio" name="product-group" value="apartments">
                         <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
@@ -170,12 +170,11 @@
                   <div class="catalog-filter-price">
                     <label class="price-min-label price-label">
                       <span class="filter-price">от</span>
-                      <input class="price-min-input price-input input" type="number" name="price-min" value="0" min="0">
+                      <input class="price-min-input price-input input price-input-disabled" type="number" name="price-min" value="0" min="0">
                     </label>
                     <label class="price-max-label price-label">
                       <span class="filter-price">до</span>
-                      <input class="price-max-input price-input input" type="number" name="price-max" value="9000"
-                        min="0">
+                      <input class="price-max-input price-input input price-input-disabled" type="number" name="price-max" value="9000" min="0">
                     </label>
                   </div>
 
@@ -194,9 +193,8 @@
                 </fieldset>
 
                 <div class="catalog-filter-group-button">
-                  <button class="button-apply button-catalog button-blue button-disabled"
-                    type="submit">Применить</button>
-                  <button class="button-reset button-catalog button-transparent-disabled" type="reset">Сбросить</button>
+                  <button class="button-apply button-catalog button-blue button-disabled" type="submit">Применить</button>
+                  <button class="button-reset button-catalog button-transparent button-transparent-disabled" type="reset">Сбросить</button>
                 </div>
 
               </div>
@@ -343,7 +341,7 @@
 
           <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="email">Email</label>
-            <input class="mailing-form-input" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
+            <input class="mailing-form-input input mailing-form-input-disabled" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
             <button class="button-mailing-form button-blue button-disabled" type="submit">Подписаться</button>
           </form>
 

@@ -160,7 +160,7 @@
 
           <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="email">Email</label>
-            <input class="mailing-form-input input" type="email" id="email" name="email" placeholder="Ваш e-mail"
+            <input class="mailing-form-input input mailing-form-input-disabled" type="email" id="email" name="email" placeholder="Ваш e-mail"
               required>
             <button class="button-mailing-form button-blue button-disabled" type="submit">Подписаться</button>
           </form>
@@ -238,14 +238,14 @@
 
               <p class="modal-field-group appointment-form-date">
                 <label class="modal-form-label" for="appointment-date">Дата заезда:</label>
-                <input class="modal-field" type="text" id="appointment-date" name="appointment-date"
+                <input class="modal-field modal-field-disabled" type="text" id="appointment-date" name="appointment-date"
                   value="27 апреля 2020" placeholder="Укажите дату">
               </p>
               <p class="modal-field-group-comment field-group-comment-mistake">Мы не можем отправить вас в прошлое.</p>
 
               <p class="modal-field-group exit-form-date">
                 <label class="modal-form-label" for="exit-date">Дата выезда:</label>
-                <input class="modal-field" type="text" id="exit-date" name="exit-date" value="1 сентября 2023"
+                <input class="modal-field modal-field-disabled" type="text" id="exit-date" name="exit-date" value="1 сентября 2023"
                   placeholder="Укажите дату">
               </p>
               <p class="modal-field-group-comment">На эти даты есть свободные номера. Пока есть.</p>
@@ -262,7 +262,7 @@
                       </svg>
                       <span class="visually-hidden">-</span>
                     </button>
-                    <input class="modal-participants-quantity input" id="input-adults" type="number"
+                    <input class="modal-participants-quantity input modal-field-disabled" id="input-adults" type="number"
                       value="2" min="0" max="10" name="adults">
                     <button class="modal-change-plus modal-change-button button-disabled" type="button">
                       <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20"
@@ -293,7 +293,7 @@
                       </svg>
                       <span class="visually-hidden">-</span>
                     </button>
-                    <input class="modal-participants-quantity input" id="input-children" type="number"
+                    <input class="modal-participants-quantity input modal-field-disabled" id="input-children" type="number"
                       value="2" min="0" max="10" name="children">
                     <button class="modal-change-plus modal-change-button button-disabled" type="button">
                       <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20"
